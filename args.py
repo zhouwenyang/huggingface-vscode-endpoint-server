@@ -8,7 +8,7 @@ class ServeArguments:
     metadata={"help": "Hostname or IP address on which to serve API. Use 0.0.0.0 to listen on all network interfaces (i.e. reachable via other hosts on the LAN), or 127.0.0.1 to listen only on loopback interface (only reachable via services on the same computer, i.e. localhost)."}
   )
   port: int = field(
-    default=8000,
+    default=80,
     metadata={"help": "Port on which to serve API."}
   )
 
