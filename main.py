@@ -17,7 +17,7 @@ app.add_middleware(
 generator: GeneratorBase = ...
 
 
-@app.post("/api/generate/")
+@app.post("/gen/")
 async def api(request: Request):
     json_request: dict = await request.json()
     inputs: str = json_request['inputs']
